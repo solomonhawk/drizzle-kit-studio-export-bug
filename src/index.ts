@@ -1,5 +1,13 @@
 import "dotenv/config";
 import { drizzle } from "drizzle-orm/libsql";
+import { demoTable } from "./db/schema";
 
-// You can specify any property from the libsql connection options
 const db = drizzle({ connection: { url: process.env.DB_FILE_NAME! } });
+
+async function main() {
+  const result = await db.select().from(demoTable).all();
+
+  console.log(result);
+}
+
+main();

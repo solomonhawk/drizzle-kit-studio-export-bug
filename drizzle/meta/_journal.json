@@ -8,6 +8,13 @@
       "when": 1731021730713,
       "tag": "0000_special_butterfly",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1731022082701,
+      "tag": "0001_brainy_blur",
+      "breakpoints": true
     }
   ]
 }
