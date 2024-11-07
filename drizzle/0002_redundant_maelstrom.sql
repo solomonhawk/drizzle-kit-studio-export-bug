@@ -1,0 +1,1 @@
+ALTER TABLE `demo_table` ADD `indentifiers_exported` text NOT NULL;
