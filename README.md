@@ -4,6 +4,33 @@ This repo is a reproduction of an issue with table columns with the word "export
 
 When Studio generates the drizzle client, it truncates the text "export" from the column name, causing an incorrect table definition and incorrect SQL to be generated.
 
+## Set Up
+
+### 1. Install dependencies
+
+    $ npm install
+
+### 2. Create `.env` file
+
+    $ cp .env{.example,}
+
+### 3. Create and migrate the SQLite database
+
+    $ npm run migrate
+
+### 4. Run the main example
+
+This will insert a record and print the results of querying that record using Drizzle ORM.
+
+    $ npm run start
+
+### 5. Run Drizzle Kit Studio
+
+Read on to see the issue explained in more detail.
+
+    $ npm run studio
+
+
 The generated schema looks correct:
 ![](./assets/images/drizzle-kit-studio-schema.png)
 
